@@ -20,38 +20,34 @@
 				background-color: #082c6c;
 				color: #f4d47c; 
 			}
-			
-			h6 {
-				color: maroon;
-				margin-left: 40px;
-			}
 
 			img.Myself {
 				display: block;
 				max-width:450px;
     			max-height:450px;
+				padding-left: 50px;
+				padding-right: 50px;
+				border-style: solid;
+				background-color: #878683;
+  				border-color: #878683;
 			}
-			.card {
-				border-color: #082c6c;
-				display: flex;
+			h2.Myself {
+    			display: table; 
+				padding-top: 10px;
+				padding-left: 34px;
+				padding-right: 34px;
+				border-style: solid;
+				background-color: #878683;
+  				border-color: #878683;
+				color: #ffffff;
+				border-radius: 5px;
 			}
-			.card-footer {
-				background-color: #082c6c;
-				color: #f4d47c; 
+			h4.Myself_text {
+				padding-left: 475px;
 			}
-			h3.card-title {
-				color: #f4d47c;
-				border-radius: 10px;
-				background: #082c6c;
-				padding: 8px;
-				width: 250px;
-				height: 50px;
-				margin: auto;
-			}
-			.card-img-top {
-				width: 100%;
-				height: 25vw;
-				object-fit: cover;
+			p.Myself_text {
+				padding-left: 475px;
+				
 			}
 			</style>
 	</head>
@@ -64,8 +60,8 @@
 				  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
-				  <div class="collapse navbar-collapse" id="main-navigation">
-					<ul class="navbar-nav">
+				  <div class="collapse navbar-collapse " id="main-navigation">
+					<ul class="navbar-nav nav-fill w-100">
 					  <li class="nav-item">
 						<a class="nav-link" href="#Hardware">Hardware</a>
 					  </li>
@@ -85,26 +81,27 @@
 				  </div>
 				</nav>
 			</div>
-
-			<div class="bio container-fluid">
-				<h2 class="text-center">Welcome to my portfolio </h2>
-				<div class="row text-center">
-					<img class="Myself rounded mx-auto d-block" style="float:left" src="resources/img/Myself.JPEG" alt="Myself">
-				</div>
-				<p class="text-center"> My name is Amanpreet Nijjar and I am an undergraduate computer engineering student at the University of Victoria. My work interests is in development of autonomous vehicles and mixed-signal circuit board design. Alongside my studies, I practice developing PCBs by volunteering my time to AUVIC, a robotics club that builds AUVs competitively for <a href="https://robonation.org/programs/robosub/">RoboSub</a>, alongside other students under the guidance of faculty advisor Dr. Brad Buckham, a mechanical engineering professor with a background in underwater dynamics and controls.    
-				</p>
-				<p class="text-center">Some fun facts: I like to spend my free time reading and listening to some old-school rap music. I think dark licorice is underrated. Coffee is best taken black, alongside dark licorice. I drive a 2008 Honda Accord Coupe and probably will for the rest of my life &#x263B</p>
+			<div class="container-fluid">
+				<h2 class="Myself text-left">Welcome to my portfolio</h2>
+				<img class="Myself rounded mx-auto d-block" style="float:left" src="resources/img/Myself.JPEG" alt="Myself">
 			</div>
+			<div class ="container-fluid">
+				<h4 class="Myself_text text-left">About me</h4>
+				<p class="Myself_text text-left"> My name is Amanpreet Nijjar and I am an undergraduate computer engineering student at the University of Victoria. My work interests is in development of autonomous vehicles and mixed-signal circuit board design. Alongside my studies, I practice developing PCBs by volunteering my time to AUVIC, a robotics club that builds AUVs competitively for <a href="https://robonation.org/programs/robosub/">RoboSub</a>, alongside other students under the guidance of faculty advisor Dr. Brad Buckham, a mechanical engineering professor with a background in underwater dynamics and controls.    
+				</p>
+				<p class="Myself_text text-left">Some fun facts: I like to spend my free time reading and listening to some old-school rap music. I think dark licorice is underrated. Coffee is best taken black, alongside dark licorice. I drive a 2008 Honda Accord Coupe and probably will for the rest of my life &#x263B</p>
+			</div>
+			
 			
 			<hr>
 
-			<div class="project container-fluid">
-				<h2 class="text-center">Projects</h2>
-				<div class="card-deck">
+
+
+				<!-- <div class="card-deck">
 					<div class="card text-center">
 						<img class="card-img-top" src="resources/img/AudioEffectsPCB.jpg" alt="Card image cap">
 						<div class="card-img-overlay">
-							<h3 class="card-title">Audio Effects</h3>
+							<h3 class="card-title ">Audio Effects</h3>
 						</div>
 						<div class="card-footer">
 							<p class="card-text">This board created audio effects using the fast fourier transform algorithm. The two types of effects implemented were the echoing and pitching effects. How it worked was it took an audio signal input from a 2.5mm AUX cable and then passed it through a butter-worth filter to remove any high frequency noise, before entering the ADC of a STM microcontroller. The effects can be enabled/disabled using two push buttons. Afterwards, the signal is outputted throigh the DAC into two filters before being played on a repurposed head-phone speaker.</p>
@@ -126,8 +123,7 @@
 							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div> -->
 			<hr>
 			<!-- <div id="content">
 				<h2 align="center"> Projects </h2>
