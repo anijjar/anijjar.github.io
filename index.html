@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-
+	<!-- https://colorswall.com/palette/5661/ -->
+	<!-- https://www.w3schools.com/css/css3_3dtransforms.asp -->
 	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="An online footprint of Aman Nijjar's work. He is not a fan of social media.">
@@ -16,13 +17,13 @@
 		<title>Aman Nijjar's Portfolio</title>
 		<style>
 			body {
-			  background-color: #082c6c;
-			  color: #f4d47c; 
+				background-color: #082c6c;
+				color: #f4d47c; 
 			}
 			
 			h6 {
-			  color: maroon;
-			  margin-left: 40px;
+				color: maroon;
+				margin-left: 40px;
 			}
 
 			img.Myself {
@@ -30,7 +31,28 @@
 				max-width:450px;
     			max-height:450px;
 			}
-
+			.card {
+				border-color: #082c6c;
+				display: flex;
+			}
+			.card-footer {
+				background-color: #082c6c;
+				color: #f4d47c; 
+			}
+			h3.card-title {
+				color: #f4d47c;
+				border-radius: 10px;
+				background: #082c6c;
+				padding: 8px;
+				width: 250px;
+				height: 50px;
+				margin: auto;
+			}
+			.card-img-top {
+				width: 100%;
+				height: 25vw;
+				object-fit: cover;
+			}
 			</style>
 	</head>
 
@@ -63,6 +85,7 @@
 				  </div>
 				</nav>
 			</div>
+
 			<div class="bio container-fluid">
 				<h2 class="text-center">Welcome to my portfolio </h2>
 				<div class="row text-center">
@@ -71,11 +94,42 @@
 				<p class="text-center"> My name is Amanpreet Nijjar and I am an undergraduate computer engineering student at the University of Victoria. My work interests is in development of autonomous vehicles and mixed-signal circuit board design. Alongside my studies, I practice developing PCBs by volunteering my time to AUVIC, a robotics club that builds AUVs competitively for <a href="https://robonation.org/programs/robosub/">RoboSub</a>, alongside other students under the guidance of faculty advisor Dr. Brad Buckham, a mechanical engineering professor with a background in underwater dynamics and controls.    
 				</p>
 				<p class="text-center">Some fun facts: I like to spend my free time reading and listening to some old-school rap music. I think dark licorice is underrated. Coffee is best taken black, alongside dark licorice. I drive a 2008 Honda Accord Coupe and probably will for the rest of my life &#x263B</p>
-			  </div>
-
-			<hr>
+			</div>
 			
-			<div id="content">
+			<hr>
+
+			<div class="project container-fluid">
+				<h2 class="text-center">Projects</h2>
+				<div class="card-deck">
+					<div class="card text-center">
+						<img class="card-img-top" src="resources/img/AudioEffectsPCB.jpg" alt="Card image cap">
+						<div class="card-img-overlay">
+							<h3 class="card-title">Audio Effects</h3>
+						</div>
+						<div class="card-footer">
+							<p class="card-text">This board created audio effects using the fast fourier transform algorithm. The two types of effects implemented were the echoing and pitching effects. How it worked was it took an audio signal input from a 2.5mm AUX cable and then passed it through a butter-worth filter to remove any high frequency noise, before entering the ADC of a STM microcontroller. The effects can be enabled/disabled using two push buttons. Afterwards, the signal is outputted throigh the DAC into two filters before being played on a repurposed head-phone speaker.</p>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="resources/img/CANDongle.jpg" alt="Card image cap">
+						<div class="card-img-overlay">
+							<h3 class="card-title text-center ">CAN Dongle</h3>
+						</div>
+						<div class="card-footer">
+							<p class="card-text">Built while I was doing my co-op with the Autonomous Underwater Vehicle Interdisciplinary Club. This board converts between USB packets and CAN messages to allow the team to debug PCBs that use the CAN bus communication protocol. It display/sends messages through a terminal emulator, such as <a hre"https://ttssh2.osdn.jp/index.html.en">Tera Term</a>.
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="resources/img/CANDongle.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Pinger</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<!-- <div id="content">
 				<h2 align="center"> Projects </h2>
 				<div class="container-fluid">
 					<h3 id="Hardware">Hardware</h3>
@@ -83,7 +137,7 @@
 						<div class="col">
 							<h6 align="center">Audio Effects</h6>
 							<img src="resources/img/AudioEffectsPCB.jpg" class="img-fluid" alt="Audio Effects">
-							<p align="center"> This board created audio effects using the fast fourier transform algorithm. The two types of effects implemented were the echoing and pitching effects. How it worked was it took an audio signal input from a 2.5mm AUX cable and then passed it through a butter-worth filter to remove any high frequency noise, before entering the ADC of a STM microcontroller. The effects can be enabled/disabled using two push buttons. Afterwards, the signal is outputted throigh the DAC into two filters before being played on a repurposed head-phone speaker.
+							<p align="center"> 
 							</p>
 						</div>
 						<div class="col">
@@ -94,24 +148,24 @@
 						</div>
 						<div class="col">Pinger</div>
 					</div>
-					<h3>Software</h3>
+					<h3 id="Software">Software</h3>
 					<div class="row">
 						<div class="col">Traffic Light indicators</div>
 						<div class="col">USB to CAN firmware</div>
 						<div class="col">Game dev</div>
 					</div>
-					<h3>Volunteer work</h3>
+					<h3 id="VW">Volunteer work</h3>
 					<div class="row">
 						<div class="col">Ship2Shore</div>
 						<div class="col">Ridge Meadows Homeshow</div>
 						<div class="col">Riverview College</div>
 					</div>
 				</div>
-			</div>
-			<hr>
+			</div> -->
+			<!-- <hr>
 			<div id="contact">
 				<h2 align="center"> Contact Information </h2>
-			</div>
+			</div> -->
 		</div>
 		<script src="./resources/js/main.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
