@@ -13,228 +13,100 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- FONT AWESOME STUFF (FOR THE SYMBOLS) -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/29a2e33ae2.css">	
+		<!-- GOOGLE FONTS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<title>Aman Nijjar's Portfolio</title>
-		<style>
-			body {
-				background-color: #082c6c;
-				color: #f4d47c; 
-			}
-
-			img.Myself {
-				/* display: block; */
-				max-width:500px;
-    			max-height:500px;
-				/* border-radius: 2%; */
-				/* padding-left: 200px; */
-			}
-			.navbar{
-				/* temperary fix. screen sizes below 360px will see issues */
-				margin-right: -20px;
-			}
-			.bg-custom{
-				background-color:#082c6c;
-			}
-			.img-center-for-small-screens {
-				padding-left: 100px;
-			}
-			</style>
+		<link rel="stylesheet" href="resources/css/basic.css"/>
 	</head>
 
 	<body>
-		<!-- START NAVBAR -->
-		<div id="navigation">
-			<nav class="navbar navbar-expand-md navbar-dark bg-dark	">
-			  <a class="navbar-brand" href="#">Amanpreet Nijjar</a>
-			  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse " id="main-navigation">
-				<ul class="navbar-nav nav-fill w-100 ">
-				  <li class="nav-item"><a class="nav-link" href="#Hardware">Hardware</a></li>
-				  <li class="nav-item"><a class="nav-link" href="#Firmware">Firmware</a></li>
-				  <li class="nav-item"><a class="nav-link" href="#Software">Software</a> </li>
-				  <li class="nav-item"><a class="nav-link" href="#VW">Volunteer Work</a></li>
-				  <li class="nav-item"><a class="nav-link" href="#Contact">Contact Information</a></li>
-				</ul>
-			  </div>
-			</nav>
-		</div>
-		<!-- END NAVBAR -->
-
-		<!-- START JUMBOTRON -->
-		<div class="jumbotron jumbotron-fluid bg-custom m-auto pb-0">
-			<div class="container mx-auto">
+		<header>
+			<!-- START NAVBAR -->
+			<div id="navigation">
+				<nav class="navbar navbar-expand-md navbar-dark bg-dark	">
+				<a class="navbar-brand" style="color:#f4d47c;" href="/index.html">Amanpreet Nijjar</a>
+				<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="main-navigation">
+					<ul class="navbar-nav nav-fill w-100 ">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" style="color:#f4d47c;" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Projects
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="/projects/hardware.html">Hardware</a>
+								<a class="dropdown-item" href="/projects/firmware.html">Firmware</a>
+								<a class="dropdown-item" href="/projects/software.html">Software</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link " style="color:#f4d47c;"href="/volunteer-work.html">Volunteer Work</a> </li>
+						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="/work-experience.html">Work Experience</a></li>
+						<!-- Make this a drop down menu to 3 main ones: PCB design, software dev, and robotics  -->
+						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="/resumes.html">Resumes</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="#Contact">Contact Information</a></li>
+					</ul>
+				</div>
+				</nav>
+			</div>
+			<!-- END NAVBAR -->
+		</header>
+		
+		<!-- START CONENT -->
+		<main>
+			<div class="container m-auto pb-0 pt-4">
 				<div class="row">
 					<div class="col-12 col-lg-6" >
 						<img class="img-thumbnail" src="resources/img/Myself.JPEG" alt="Myself">
 					</div>
 					<div class="col-12 col-lg-6">
-						<h1 class="display-5">Welcome to my project scrapbook</h1>
-						<p class="lead">My name is Amanpreet Nijjar and I am an undergraduate computer engineering student at the University of Victoria. My work interests is in development of autonomous vehicles and mixed-signal circuit board design. Alongside my studies, I practice developing PCBs by volunteering my time to AUVIC, a robotics club that builds AUVs competitively for <a href="https://robonation.org/programs/robosub/">RoboSub</a>. Myself and others learn about underwater robotics development under the guidance of faculty advisor Dr. Brad Buckham, a mechanical engineering professor with a background in underwater dynamics and controls.</p>
+						<h1 class="display-5">Welcome to my digital business card</h1>
+						<p class="lead">My name is Amanpreet Nijjar and I am an undergraduate computer engineering student at the University of Victoria. My work interests is in development of autonomous vehicles and mixed-signal circuit board design. Alongside my studies, I practice developing PCBs by volunteering my time to AUVIC, a robotics club that builds AUVs competitively for <a href="https://robonation.org/programs/robosub/" style="color:#bebebe">RoboSub</a>. Myself and others learn about underwater robotics development under the supervision of faculty advisor Dr. Brad Buckham - a mechanical engineering professor with a background in underwater dynamics and controls.</p>
 						<p class="lead">Some fun facts: I like to spend my free time reading and listening to some old-school rap music. I think dark licorice is underrated and coffee is best taken black. I drive a 2008 Honda Accord Coupe and probably will for the rest of my life &#x263B</p>
-						<hr class="my-2">
-						<p>Checkout these links to learn more about my work:</p>
-						<a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
-						</p>
+						<br>
+						<p class="bold">Here are a couple of my key compentencies:</p>
+						<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+							<div class="btn-group mr-2 mb-2" role="group">
+							<button type="button" class="btn btn-secondary bg-dark border-dark">Engineering Tools</button>
+							</div>
+							<div class="btn-group mr-2 mb-2" role="group">
+								<button type="button" class="btn btn-secondary bg-dark border-dark">Power and Energy Systems</button>
+							</div>
+							<div class="btn-group mr-2 mb-2" role="group">
+								<button type="button" class="btn btn-secondary bg-dark border-dark">Design</button>
+							</div>
+							<div class="btn-group mr-2 mb-2" role="group">
+								<button type="button" class="btn btn-secondary bg-dark border-dark">Networks and Communication</button>
+							</div>
+							<div class="btn-group mr-2 mb-2" role="group">
+								<button type="button" class="btn btn-secondary bg-dark border-dark">Circuits and Electronics</button>
+							</div>
+						</div>
 					</div>
 				</div>
-			  </div>
-		</div>
-		<!-- END JUMBOTRON -->
+				</div>
+		</main>
+		<!-- END CONTENT -->
 
-		<div class="container">
+		<!-- START FOOTER -->
+		<footer class="page-footer font-small bg-dark mt-4">
+			<div class="container-fluid text-center text-md-left pt-2">
+				<div class="row">
+					<div class="col mt-md-0 mt-3">
+						<h5 class="text-uppercase text-center">Interested in a chat?</h5>
+						<p class="text-center">Feel free to give me a call or an email.</p>
 
-		</div>
-
-			<!-- <div class="card-deck">
-				<div class="card text-center">
-					<img class="card-img-top" src="resources/img/AudioEffectsPCB.jpg" alt="Card image cap">
-					<div class="card-img-overlay">
-						<h3 class="card-title ">Audio Effects</h3>
 					</div>
-					<div class="card-footer">
-						<p class="card-text">This board created audio effects using the fast fourier transform algorithm. The two types of effects implemented were the echoing and pitching effects. How it worked was it took an audio signal input from a 2.5mm AUX cable and then passed it through a butter-worth filter to remove any high frequency noise, before entering the ADC of a STM microcontroller. The effects can be enabled/disabled using two push buttons. Afterwards, the signal is outputted throigh the DAC into two filters before being played on a repurposed head-phone speaker.</p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top" src="resources/img/CANDongle.jpg" alt="Card image cap">
-					<div class="card-img-overlay">
-						<h3 class="card-title text-center ">CAN Dongle</h3>
-					</div>
-					<div class="card-footer">
-						<p class="card-text">Built while I was doing my co-op with the Autonomous Underwater Vehicle Interdisciplinary Club. This board converts between USB packets and CAN messages to allow the team to debug PCBs that use the CAN bus communication protocol. It display/sends messages through a terminal emulator, such as <a hre"https://ttssh2.osdn.jp/index.html.en">Tera Term</a>.
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top" src="resources/img/CANDongle.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Pinger</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-					</div>
-				</div>
-			</div> -->
-		<hr>
-		<!-- <div id="content">
-			<h2 align="center"> Projects </h2>
-			<div class="container-fluid">
-				<h3 id="Hardware">Hardware</h3>
-				<div class="row">
-					<div class="col">
-						<h6 align="center">Audio Effects</h6>
-						<img src="resources/img/AudioEffectsPCB.jpg" class="img-fluid" alt="Audio Effects">
-						<p align="center"> 
-						</p>
-					</div>
-					<div class="col">
-						<h6 align="center">CAN Dongle</h6>
-						<img src="resources/img/CANDongle.jpg" class="img-fluid" alt="CAN Dongle">
-						<p align="center"> Built while I was doing my co-op with the Autonomous Underwater Vehicle Interdisciplinary Club. This board converts between USB packets and CAN messages to allow the team to debug PCBs that use the CAN bus communication protocol. It display/sends messages through a terminal emulator, such as <a hre"https://ttssh2.osdn.jp/index.html.en">Tera Term</a>.
-						</p>
-					</div>
-					<div class="col">Pinger</div>
-				</div>
-				<h3 id="Software">Software</h3>
-				<div class="row">
-					<div class="col">Traffic Light indicators</div>
-					<div class="col">USB to CAN firmware</div>
-					<div class="col">Game dev</div>
-				</div>
-				<h3 id="VW">Volunteer work</h3>
-				<div class="row">
-					<div class="col">Ship2Shore</div>
-					<div class="col">Ridge Meadows Homeshow</div>
-					<div class="col">Riverview College</div>
 				</div>
 			</div>
-		</div> -->
-		<!-- <hr>
-			<div id="contact">
-				<h2 align="center"> Contact Information </h2>
-			</div> -->
-		
-		<!-- Footer -->
-		<footer class="page-footer font-small bg-dark pt-4">
-		
-			<!-- Footer Links -->
-			<div class="container-fluid text-center text-md-left">
-		
-				<!-- Grid row -->
-				<div class="row">
-			
-					<!-- Grid column -->
-					<div class="col-md-6 mt-md-0 mt-3">
-			
-					<!-- Content -->
-					<h5 class="text-uppercase">Footer Content</h5>
-					<p>Here you can use rows and columns to organize your footer content.</p>
-			
-					</div>
-					<!-- Grid column -->
-			
-					<hr class="clearfix w-100 d-md-none pb-3">
-			
-					<!-- Grid column -->
-					<div class="col-md-3 mb-md-0 mb-3">
-			
-					<!-- Links -->
-					<h5 class="text-uppercase">Links</h5>
-			
-					<ul class="list-unstyled">
-						<li>
-						<a href="#!">Link 1</a>
-						</li>
-						<li>
-						<a href="#!">Link 2</a>
-						</li>
-						<li>
-						<a href="#!">Link 3</a>
-						</li>
-						<li>
-						<a href="#!">Link 4</a>
-						</li>
-					</ul>
-			
-					</div>
-					<!-- Grid column -->
-			
-					<!-- Grid column -->
-					<div class="col-md-3 mb-md-0 mb-3">
-			
-					<!-- Links -->
-					<h5 class="text-uppercase">Links</h5>
-			
-					<ul class="list-unstyled">
-						<li>
-						<a href="#!">Link 1</a>
-						</li>
-						<li>
-						<a href="#!">Link 2</a>
-						</li>
-						<li>
-						<a href="#!">Link 3</a>
-						</li>
-						<li>
-						<a href="#!">Link 4</a>
-						</li>
-					</ul>
-			
-					</div>
-					<!-- Grid column -->
-			
-				</div>
-				<!-- Grid row -->
-		
-			</div>
-			<!-- Footer Links -->
-		
-			<!-- Copyright -->
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
 				<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
 			</div>
-			<!-- Copyright -->
-		
 		</footer>
-		<!-- Footer -->
+		<!-- END FOOTER -->
+
 		<script src="./resources/js/main.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
