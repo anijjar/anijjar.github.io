@@ -13,7 +13,7 @@ body {
 }
 /* select the tag with id hardware and the class jumbotron */
 #hardware.jumbotron{ 
-	background-image: url('../img/stock-circuit.jpg'); 
+	background-image: url('../img/jumbotron-bg.jpg'); 
     background-size: 100% 100%; 
     color: #f4d47c;
 	background-repeat: no-repeat; 
@@ -31,4 +31,10 @@ body {
     border-radius: 10px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+#hardware img {
+    width: auto;
+    height: 275px;
+    object-fit: fill;
 }

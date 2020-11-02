@@ -60,26 +60,74 @@
             <div class="jumbotron jumbotron-fluid" id="hardware">
                 <div class="container">
                     <h1 class="display-4"><span>Hardware</span></h1>
-                    <p class="h5"><span>These are some printed circuit boards I have made for class, others, or for fun </span></p>
+                    <p class="h5"><span>These are some printed circuit boards I have made for class, volunteer work, or for fun </span></p>
                 </div>
             </div>
-            <!-- END JUMBOTRON -->
-            
-            <!-- CARDS -->
+			<!-- END JUMBOTRON -->
+			
+            <!-- START CARDS -->
+            <div class="row mx-auto" id="hardware">
+				<div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
+				  <div class="card bg-dark">
+					<img class="card-img-top" src="../resources/img/CanDongle.jpg" alt="Card image cap">
+					<div class="card-body ">
+						<h5 class="card-title">CAN Dongle</h5>
+						<p class="card-text">Interfaces a 2-wire CAN bus with a USB type connection. Messages can be read/sent from the computer using a terminal emulator, such as <a href="https://ttssh2.osdn.jp/index.html.en" style="color:#bebebe">Tera Term</a>, to confirm if custom PCBs are communicating properly. </p>
+					</div>
+					<div class="card-footer ">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					  </div>
+				  </div>
+				</div>
 
-            <!-- END CARDS -->
+				<div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
+					<div class="card bg-dark">
+						<img class="card-img-top" src="../resources/img/AudioEffectsPCB_2.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Audio Effects</h5>
+							<p>Creates an echo/pitching effect through button presess. The pitch level and modes are displayed using the 7-segment LEDs. The audio signal is filtered and passed through a STM where the effect is applied using FFT, until it is sent out the speaker. </p>
+						</div>
+						<div class=" card-footer">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						  </div>
+					</div>
+				  </div>
+
+				  <div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
+					<div class="card bg-dark">
+						<img class="card-img-top" src="../resources/img/Pinger-schem-1.jpeg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Pinger</h5>
+							<p class="card-text">Sends acoustic signals at 25,30,35, and 40 kHz using an ultrasonic transducer.</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						  </div>
+					</div>
+				  </div>
+			</div>
+			<!-- END CARDS -->
+			
         </main>
 		<!-- END CONTENT -->
 
 		<!-- START FOOTER -->
 		<footer class="page-footer font-small bg-dark mt-4">
 			<div class="container-fluid text-center text-md-left pt-2">
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col mt-md-0 mt-3">
 						<h5 class="text-uppercase text-center">Interested in a chat?</h5>
-						<p class="text-center">Feel free to give me a call or an email.</p>
-
+						<p class="text-center">Feel free to contact me through any of these channels.</p>
+						<i class="btn btn-dark fa fa-envelope-o fa-3x" href="mailto:anijjar@uvic.ca"></i>
 					</div>
+				</div> -->
+				<h5 class="text-uppercase text-center">Interested in a chat?</h5>
+				<p class="text-center">Feel free to contact me through any of these channels.</p>
+				<div class="text-center">
+					<i class="btn btn-dark fa fa-envelope-o fa-3x" href="mailto:anijjar@uvic.ca"></i>
+					<i class="btn btn-dark fa fa-github fa-3x" href="https://github.com/anijjar"></i>
+					<i class="btn btn-dark fa fa-linkedin-square fa-3x" href="https://www.linkedin.com/in/anijjar19/"></i>
+					<i class="btn btn-dark fa fa-facebook-square fa-3x" href="https://www.facebook.com/aman.nijjar1998/"></i>
 				</div>
 			</div>
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
