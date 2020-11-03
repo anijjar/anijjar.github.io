@@ -42,16 +42,16 @@
 								<a class="dropdown-item" href="/projects/software.html">Software</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link " style="color:#f4d47c;"href="/volunteer-work.html">Volunteer Work</a> </li>
-						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="/work-experience.html">Work Experience</a></li>
+						<li class="nav-item"><a class="nav-link " style="color:#f4d47c;"href="../volunteer-work.html">Volunteer Work</a> </li>
+						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="../work-experience.html">Work Experience</a></li>
 						<!-- Make this a drop down menu to 3 main ones: PCB design, software dev, and robotics  -->
-						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="/resumes.html">Resumes</a></li>
-						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="#Contact">Contact Information</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="../resumes.html">Resumes</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="../contact.html">Contact Information</a></li>
 					</ul>
 				</div>
 				</nav>
 			</div>
-			<!-- END NAVBAR -->
+			<!-- END NAVBAR --
 		</header>
 
         <!-- START CONTENT -->
@@ -68,43 +68,60 @@
             <!-- START CARDS -->
             <div class="row mx-auto" id="hardware">
 				<div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
-				  <div class="card bg-dark">
-					<img class="card-img-top" src="../resources/img/CanDongle.jpg" alt="Card image cap">
-					<div class="card-body ">
-						<h5 class="card-title">CAN Dongle</h5>
-						<p class="card-text">Interfaces a 2-wire CAN bus with a USB type connection. Messages can be read/sent from the computer using a terminal emulator, such as <a href="https://ttssh2.osdn.jp/index.html.en" style="color:#bebebe">Tera Term</a>, to confirm if custom PCBs are communicating properly. </p>
+					<div class="card bg-dark">
+						<img class="card-img-top" src="../resources/img/Pinger-schem-1.jpeg" alt="Card image cap">
+						<div class="card-body pb-0">
+							<h5 class="card-title">Pinger</h5>
+							<p class="card-text">Sends acoustic signals at 25,30,35, and 40 kHz using an ultrasonic transducer. Uses a CMOS-inverter @9Vdc to drive the timer output from an STM chip before it is fed into the transducer.</p>
+							<p><b>Core concepts:</b> Analog Signal processing and mixed-signal design.
+							</p>
+							<p>Project progress: 30% - </p>
+						</div>
+						<div class="card-footer">
+							<!-- add disabled keyword to end of first tag to get the look without function  -->
+							<a class="btn btn-sm btn-success" href="https://github.com/anijjar/ECE299"role="button" target="_blank">Files</a>
+							<a class="btn btn-sm btn-info" href="https://www.uvic.ca/calendar/undergrad/#/courses/rkxvdluaQV?bc=true&bcCurrent=Introduction%20to%20Electrical%20and%20Computer%20Engineering%20Design&bcItemType=Courses" role="button" target="_blank">ECE 299</a>
+							<button type="button" class="btn btn-secondary btn-sm">Built on Ki-Cad</button>
+						</div>
 					</div>
-					<div class="card-footer ">
-						<small class="text-muted">Last updated 3 mins ago</small>
-					  </div>
-				  </div>
 				</div>
-
+				<div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
+					<div class="card bg-dark">
+						<img class="card-img-top" src="../resources/img/CanDongle.jpg" alt="Card image cap">
+						<div class="card-body pb-0">
+							<h5 class="card-title">CAN Dongle</h5>
+							<p class="card-text">Interfaces a 2-wire CAN bus with a USB type connection. Messages can be read/sent from the computer using a terminal emulator, such as <a href="https://ttssh2.osdn.jp/index.html.en" style="color:#bebebe">Tera Term</a>, to confirm if custom PCBs are communicating properly. </p>
+							<p><b>Core concepts:</b> Analog Signal processing and PCB layout. 
+							</p>
+							<p>Project progress: 100% - Completed with no problems</p>
+						</div>
+						<div class="card-footer">
+							<!-- add disabled keyword to end of first tag to get the look without function  -->
+							<a class="btn btn-sm btn-success" href="https://github.com/anijjar/ECE299"role="button" target="_blank">Files</a>
+							<a class="btn btn-sm btn-info" href="https://www.uvic.ca/calendar/undergrad/#/courses/rkxvdluaQV?bc=true&bcCurrent=Introduction%20to%20Electrical%20and%20Computer%20Engineering%20Design&bcItemType=Courses" role="button" target="_blank">ECE 299</a>
+							<button type="button" class="btn btn-secondary btn-sm">Built on Ki-Cad</button>
+						</div>
+					</div>
+				</div>
 				<div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
 					<div class="card bg-dark">
 						<img class="card-img-top" src="../resources/img/AudioEffectsPCB_2.jpg" alt="Card image cap">
-						<div class="card-body">
+						<div class="card-body pb-0">
 							<h5 class="card-title">Audio Effects</h5>
 							<p>Creates an echo/pitching effect through button presess. The pitch level and modes are displayed using the 7-segment LEDs. The audio signal is filtered and passed through a STM where the effect is applied using FFT, until it is sent out the speaker. </p>
-						</div>
-						<div class=" card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						  </div>
-					</div>
-				  </div>
-
-				  <div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
-					<div class="card bg-dark">
-						<img class="card-img-top" src="../resources/img/Pinger-schem-1.jpeg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Pinger</h5>
-							<p class="card-text">Sends acoustic signals at 25,30,35, and 40 kHz using an ultrasonic transducer.</p>
+							<p><b>Core Concepts:</b> Analog Signal processing and PCB layout. 
+							</p>
+							<p><b>Project Progress:</b> 100% - Completed (Aug 2019)</p>
+							<p><b>Final Product:</b> Effects were working correctly. LED display was mis-layered, so a different signaling scheme was used using the working LEDs. The board was tested using <a href="https://www.youtube.com/watch?v=QgKrzdaDQMw&ab_channel=LadyGagaVEVO" style="color:#bebebe">Lady Gaga-Paparazzi</a>. The results were poor: The song was accompined by static, but the it slightly improved after shifting the connection. Moral: always use connectors, rather than wire. </p>
 						</div>
 						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						  </div>
+							<!-- add disabled keyword to end of first tag to get the look without function  -->
+							<a class="btn btn-sm btn-success" href="https://github.com/anijjar/ECE299"role="button" target="_blank">Files</a>
+							<a class="btn btn-sm btn-info" href="https://www.uvic.ca/calendar/undergrad/#/courses/rkxvdluaQV?bc=true&bcCurrent=Introduction%20to%20Electrical%20and%20Computer%20Engineering%20Design&bcItemType=Courses" role="button" target="_blank">ECE 299</a>
+							<button type="button" class="btn btn-secondary btn-sm">Built on Ki-Cad</button>
+						</div>
 					</div>
-				  </div>
+				</div>
 			</div>
 			<!-- END CARDS -->
 			
@@ -114,13 +131,6 @@
 		<!-- START FOOTER -->
 		<footer class="page-footer font-small bg-dark mt-4">
 			<div class="container-fluid text-center text-md-left pt-2">
-				<!-- <div class="row">
-					<div class="col mt-md-0 mt-3">
-						<h5 class="text-uppercase text-center">Interested in a chat?</h5>
-						<p class="text-center">Feel free to contact me through any of these channels.</p>
-						<i class="btn btn-dark fa fa-envelope-o fa-3x" href="mailto:anijjar@uvic.ca"></i>
-					</div>
-				</div> -->
 				<h5 class="text-uppercase text-center">Interested in a chat?</h5>
 				<p class="text-center">Feel free to contact me through any of these channels.</p>
 				<div class="text-center">

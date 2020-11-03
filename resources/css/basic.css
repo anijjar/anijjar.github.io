@@ -11,6 +11,12 @@ body {
     background-color: #f4d47c;
     
 }
+.jumbotron{ 
+	background-color: #444444; 
+    background-size: 100% 100%; 
+    color: #f4d47c;
+	background-repeat: no-repeat; 
+}
 /* select the tag with id hardware and the class jumbotron */
 #hardware.jumbotron{ 
 	background-image: url('../img/jumbotron-bg.jpg'); 
@@ -37,4 +43,9 @@ body {
     width: auto;
     height: 275px;
     object-fit: fill;
+}
+#hardware .progress-bar {
+    width:100%; 
+    background-color:#f4d47c;
+    color: #444444;
 }
