@@ -7,6 +7,10 @@ body {
     color: #f4d47c;
 }
 
+.fa {
+    color: #f4d47c;
+}
+
 .navbar .dropdown-menu {
     background-color: #f4d47c;
     
@@ -48,4 +52,32 @@ body {
     width:100%; 
     background-color:#f4d47c;
     color: #444444;
+}
+
+#firmware.jumbotron{ 
+	background-image: url('../img/assembly.jpg'); 
+    background-size: 100% 100%; 
+    color: #f4d47c;
+	background-repeat: no-repeat; 
+}
+
+#software.jumbotron{ 
+	background-image: url('../img/bitcoin-code.jpg'); 
+    background-size: 100% 100%; 
+    color: #f4d47c;
+	background-repeat: no-repeat; 
+}
+
+#software.jumbotron h1 span { 
+    background-color: #193f15; 
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#software.jumbotron p span { 
+    background-color: #193f15; 
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
