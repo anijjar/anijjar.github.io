@@ -61,7 +61,7 @@
 					<div class="col-12 col-lg-6">
 						<h2 class="display-4 text-center my-4">Contact Me</h2>
 						<p class="text-center w-responsive mx-auto"> 
-							Do you have any questions for me? Please do not hesitate to contact me. if you send an email, you should expect a response by the end of the day. Feel free to call my cell @ 604-500-5071 if you would like a quicker response. (right now i am working on adding a server to this site, so this forum will not work)
+							Do you have any questions for me? Please do not hesitate to contact me. if you send an email, you should expect a response by the end of the day. Feel free to call my cell @ 604-500-5071 if you would like a quicker response. (This form wont work yet, adding the JS soon)
 						</p>
 						<div class="text-center pb-3">
 							<a href="mailto:anijjar@uvic.ca" target=”_blank”><i class="fa fa-envelope-o fa-3x mr-3"></i></a>
@@ -71,7 +71,6 @@
 						</div>
 					</div>
 					<div class="col-12 col-lg-6">
-					<!--Grid column-->
 						<form id="contact-form" name="contact-form" action="mail.php" method="POST">
 							<div class="row">
 								<!--Grid column-->
@@ -106,11 +105,10 @@
 							</div>
 						</form>
 
-						<div class="text-center text-md-left">
-							<a class="btn btn-secondary bg-dark border-dark " onclick="document.getElementById('contact-form').submit();">Send</a>
+						<div class="text-center">
+							<a class="btn btn-secondary bg-dark border-dark btn-block" onclick="document.getElementById('contact-form').submit();"><b>Send The Message</b></a>
+							<script src="resources/js/form.js"></script>
 						</div>
-						<div class="status"></div>
-					<!--Grid column-->
 					</div>
 				</div>
 			</div>
