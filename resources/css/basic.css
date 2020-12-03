@@ -1,4 +1,5 @@
 body {
+    margin-top: 50px;
     background-color: #082c6c;
     color: #f4d47c; 
 }
@@ -11,8 +12,18 @@ body {
     color: #f4d47c;
 }
 
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
 .navbar .dropdown-menu {
     background-color: #f4d47c;
+    position: fixed;
+    z-index: 9999;
     
 }
 .jumbotron{ 
