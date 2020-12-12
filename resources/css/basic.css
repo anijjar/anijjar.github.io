@@ -24,6 +24,17 @@ body {
     background-color: #f4d47c;
     text-align: center;
 }
+
+/* change the color of the hamburger drop down icon */ 
+.navbar-dark.navbar-toggler { 
+    border-color: #f4d47c; 
+} 
+.navbar-dark.navbar-toggler .navbar-toggler-icon { 
+    /* RGB color code of #f4d47c is (244,212,124)*/
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(244, 212, 124, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
 .jumbotron{ 
 	background-color: #444444; 
     background-size: 100% 100%; 
