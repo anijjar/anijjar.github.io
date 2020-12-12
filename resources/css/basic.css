@@ -68,12 +68,17 @@ body {
     height: 275px;
     object-fit: fill;
 }
-#hardware .progress-bar {
-    width:100%; 
-    background-color:#f4d47c;
-    color: #444444;
+#hardware .modal-header{
+    background-color: #082c6c;
 }
-
+#hardware .modal-body {
+    background-color:#f4d47c;
+    color: #082c6c;
+    
+ }
+ #hardware .modal-footer{
+    background-color: #082c6c;
+}
 #firmware.jumbotron{ 
 	background-image: url('../img/assembly.jpg'); 
     background-size: 100% 100%; 

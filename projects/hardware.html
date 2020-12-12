@@ -60,7 +60,7 @@
             <div class="jumbotron jumbotron-fluid" id="hardware">
                 <div class="container">
                     <h1 class="display-4"><span>Hardware</span></h1>
-                    <p class="h5"><span>These are some printed circuit boards I have made for class, volunteer work, or for my own curiosity </span></p>
+                    <p class="h5"><span>Projects that cost me a lot to build. It helps to do it right the first time </span></p>
                 </div>
             </div>
 			<!-- END JUMBOTRON -->
@@ -72,16 +72,13 @@
 						<img class="card-img-top" src="../resources/img/Pinger-schem-1.jpeg" alt="Card image cap">
 						<div class="card-body pb-0">
 							<h5 class="card-title">Underwater Locator Beacon</h5>
-							<p class="card-text"><b>Project Scope:</b> Built to test hydrophone systems on autonomous underwater vehicles. PCB should monitor internal temperature, humidity, and pressure to prevent catastrophic damage in case of water leakage. Must output 4 fixed-frequency acoustic waves.</p>
-							<p><b>Core Concepts:</b> Mixed-signal design | I2C | USB |
+							<p class="card-text">This device will send acoustic signals underwater via transducer. It can monitor internal humidity, temperature, and pressure to prevent water damage. Moreover, it can be externally controlled via bluetooth, provided it is not sumberged in water.
+							<p><b>Core Concepts:</b> Mixed-Signal Design with analog/digital signals
 							</p>
-							<p><b>Project Progress:</b> 40% - Deciding on drive design</p>
 						</div>
 						<div class="card-footer">
-							<!-- add disabled keyword to end of first tag to get the look without function  -->
-							<a class="btn btn-sm btn-success" role="button" target="_blank" disabled>Files</a>
-							<a class="btn btn-sm btn-info" role="button" target="_blank" disabled>Volunteer Work</a>
-							<button type="button" class="btn btn-secondary btn-sm" href="https://www.altium.com/">Built on Altium</button>
+							<a class=" mt-1 btn btn-sm btn-info" role="button" target="_blank" style="color:#082c66" disabled><b>Volunteer Work</b></a>
+							<button type="button" class=" mt-1 btn btn-secondary btn-sm" href="https://www.altium.com/"><b>CAD Tool: Altium</b></button>
 						</div>
 					</div>
 				</div>
@@ -93,10 +90,7 @@
 								<img class="d-block w-100" src="../resources/img/CanDongle.jpg" alt="First slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="../resources/img/CanDongle_TopLayer.jpg" alt="Second slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="../resources/img/CanDongle_BotLayer.jpg" alt="Third slide">
+								<img class="d-block w-100" src="../resources/img/CanDongle_Back.jpg" alt="Second slide">
 							</div>
 							</div>
 							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -113,32 +107,55 @@
 							<p class="card-text">Interfaces a 2-wire CAN bus with a USB type connection. Messages can be read/sent from the computer using a terminal emulator, such as <a href="https://ttssh2.osdn.jp/index.html.en" style="color:#bebebe">Tera Term</a>, to confirm if custom PCBs are communicating properly. </p>
 							<p><b>Core Concepts:</b> Signal processing | USB | CAN 
 							</p>
-							<p><b>Project Progress:</b> 80% - Undergoing layout review</p>
-						</div>
+							</div>
 						<div class="card-footer">
 							<!-- add disabled keyword to end of first tag to get the look without function  -->
-							<a class="btn btn-sm btn-success"role="button" target="_blank" disabled>Files</a>
-							<a class="btn btn-sm btn-info" disabled>Internship Project</a>
-							<button type="button" class="btn btn-secondary btn-sm" href="https://www.altium.com/">Built on Altium</button>
+							<a class="mt-1 btn btn-sm btn-success"role="button" target="_blank"  style="color:#000000" disabled><b>Files</b></a>
+							<a class="mt-1 btn btn-sm btn-info" style="color:#082c66" disabled><b>Internship Project</b></a>
+							<button type="button" class="mt-1 btn btn-secondary btn-sm" href="https://www.altium.com/"><b>Built on Altium</b></button>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 pb-2 col-md-4 d-flex align-items-stretch">
 					<div class="card bg-dark">
 						<img class="card-img-top" src="../resources/img/AudioEffectsPCB_2.jpg" alt="Card image cap">
+
 						<div class="card-body pb-0">
 							<h5 class="card-title">Audio Effects</h5>
 							<p>Creates an echo/pitching effect through button presess. The pitch level and modes are displayed using the 7-segment LEDs. The audio signal is filtered and passed through a STM where the effect is applied using FFT, until it is sent out the speaker. </p>
-							<p><b>Core Concepts:</b> Analog Signal processing | PCB layout
+							<p><b>Core Concepts:</b> Analog Signal Processing
 							</p>
-							<p><b>Project Progress:</b> 100% - Completed (Aug 2019)</p>
-							<p><b>Final Product:</b> Effects were working correctly. LED display was mis-layered, so a different signaling scheme was used using the working LEDs. The board was tested using <a href="https://www.youtube.com/watch?v=QgKrzdaDQMw&ab_channel=LadyGagaVEVO" style="color:#bebebe">Lady Gaga-Paparazzi</a>.The song was accompined by static, but the it slightly improved after shifting the connection. When connecting peripherals, we should always use proper connectors. </p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-info" style="color:#082c66"  data-toggle="modal" data-target="#FinalProduct3">
+								<b>Final Comments</b>
+							</button>
+							<!-- Modal -->
+							<div class="modal" id="FinalProduct3" tabindex="-1" role="dialog" aria-labelledby="FinalProduct3Label" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+									<h5 class="modal-title" id="FinalProduct3Label">Final Comments</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									</div>
+									<div class="modal-body">
+										<p>Effects were working correctly. The board was tested using <a href="https://www.youtube.com/watch?v=QgKrzdaDQMw&ab_channel=LadyGagaVEVO" style="color:#082c6c;"><b>Lady Gaga-Paparazzi</b></a>. The song was accompined by static, but the it slightly improved after improving the connection. When connecting peripherals, we should always use proper connectors. </p>
+									</div>
+									<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Close</b></button>
+									</div>
+								</div>
+								</div>
+							</div>
+
 						</div>
+
 						<div class="card-footer">
 							<!-- add disabled keyword to end of first tag to get the look without function  -->
-							<a class="btn btn-sm btn-success" href="https://github.com/anijjar/ECE299"role="button" target="_blank">Files</a>
-							<a class="btn btn-sm btn-info" href="https://www.uvic.ca/calendar/undergrad/#/courses/rkxvdluaQV?bc=true&bcCurrent=Introduction%20to%20Electrical%20and%20Computer%20Engineering%20Design&bcItemType=Courses" role="button" target="_blank">ECE 299</a>
-							<button type="button" class="btn btn-secondary btn-sm">Built on Ki-Cad</button>
+							<a class="mt-1 btn btn-sm btn-success" href="https://github.com/anijjar/ECE299"role="button" style="color:#000000" target="_blank"><b>Files</b></a>
+							<a class="mt-1 btn btn-sm btn-info" href="https://www.uvic.ca/calendar/undergrad/#/courses/rkxvdluaQV?bc=true&bcCurrent=Introduction%20to%20Electrical%20and%20Computer%20Engineering%20Design&bcItemType=Courses" style="color:#082c66"  role="button" target="_blank"><b>ECE 299</b></a>
+							<a class="mt-1 btn btn-secondary btn-sm"><b>CAD Tool: Ki-Cad</b></a>
 						</div>
 					</div>
 				</div>
