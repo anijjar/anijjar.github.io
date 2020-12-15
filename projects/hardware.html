@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/29a2e33ae2.css">	
 		<!-- GOOGLE FONTS -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<title>Projects</title>
+		<title>Hardware Projects</title>
 		<link rel="stylesheet" href="../resources/css/basic.css"/>
 	</head>
 
@@ -71,7 +71,7 @@
 					<div class="card bg-dark">
 						<img class="card-img-top" src="../resources/img/Pinger-schem-1.jpeg" alt="Card image cap">
 						<div class="card-body pb-0">
-							<h5 class="card-title">Underwater Locator Beacon</h5>
+							<h5 class="card-title text-center">Underwater Locator Beacon</h5>
 							<p class="card-text">This device will send acoustic signals underwater via transducer. It can monitor internal humidity, temperature, and pressure to prevent water damage. Moreover, it can be externally controlled via bluetooth, provided it is not sumberged in water.
 							<p><b>Core Concepts:</b> Mixed-Signal Design with analog/digital signals
 							</p>
@@ -103,8 +103,8 @@
 							</a>
 					  	</div>
 						<div class="card-body pb-0">
-							<h5 class="card-title">CAN Dongle</h5>
-							<p class="card-text">Interfaces a 2-wire CAN bus with a USB type connection. Messages can be read/sent from the computer using a terminal emulator, such as <a href="https://ttssh2.osdn.jp/index.html.en" style="color:#bebebe">Tera Term</a>, to confirm if custom PCBs are communicating properly. </p>
+							<h5 class="card-title text-center">CAN Dongle</h5>
+							<p class="card-text">A small piece of hardware that connects enables USB device to communicate with a 2-wire CAN bus. Messages can be read/sent from the computer using a terminal emulator, such as <a href="https://ttssh2.osdn.jp/index.html.en" style="color:#bebebe"><b>Tera Term</b></a>, to confirm if custom PCBs are communicating properly. </p>
 							<p><b>Core Concepts:</b> Signal processing | USB | CAN 
 							</p>
 							</div>
@@ -112,7 +112,7 @@
 							<!-- add disabled keyword to end of first tag to get the look without function  -->
 							<a class="mt-1 btn btn-sm btn-success"role="button" target="_blank"  style="color:#000000" disabled><b>Files</b></a>
 							<a class="mt-1 btn btn-sm btn-info" style="color:#082c66" disabled><b>Internship Project</b></a>
-							<button type="button" class="mt-1 btn btn-secondary btn-sm" href="https://www.altium.com/"><b>Built on Altium</b></button>
+							<button type="button" class="mt-1 btn btn-secondary btn-sm" href="https://www.altium.com/"><b>CAD Tool: Altium</b></button>
 						</div>
 					</div>
 				</div>
@@ -121,31 +121,31 @@
 						<img class="card-img-top" src="../resources/img/AudioEffectsPCB_2.jpg" alt="Card image cap">
 
 						<div class="card-body pb-0">
-							<h5 class="card-title">Audio Effects</h5>
+							<h5 class="card-title text-center">Audio Effects</h5>
 							<p>Creates an echo/pitching effect through button presess. The pitch level and modes are displayed using the 7-segment LEDs. The audio signal is filtered and passed through a STM where the effect is applied using FFT, until it is sent out the speaker. </p>
 							<p><b>Core Concepts:</b> Analog Signal Processing
 							</p>
 							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-info" style="color:#082c66"  data-toggle="modal" data-target="#FinalProduct3">
-								<b>Final Comments</b>
+							<button type="button" class="btn btn-block btn-secondary"  data-toggle="modal" data-target="#FinalProduct3">
+								<b>Learn More</b>
 							</button>
 							<!-- Modal -->
-							<div class="modal" id="FinalProduct3" tabindex="-1" role="dialog" aria-labelledby="FinalProduct3Label" aria-hidden="true">
+							<div class="modal " id="FinalProduct3" tabindex="-1" role="dialog" aria-labelledby="FinalProduct3Label" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-									<h5 class="modal-title" id="FinalProduct3Label">Final Comments</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
+									<div class="modal-content">
+										<div class="modal-header bg-dark">
+											<h5 class="modal-title " id="FinalProduct3Label">Final Comments</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<p>Effects were working correctly. The board was tested using <a href="https://www.youtube.com/watch?v=QgKrzdaDQMw&ab_channel=LadyGagaVEVO" style="color:#bebebe"><b>Lady Gaga-Paparazzi</b></a>. The song was accompined by static, but the it slightly improved after improving the connection. When connecting peripherals, we should always use proper connectors. </p>
+										</div>
+										<div class="modal-footer bg-dark">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Close</b></button>
+										</div>
 									</div>
-									<div class="modal-body">
-										<p>Effects were working correctly. The board was tested using <a href="https://www.youtube.com/watch?v=QgKrzdaDQMw&ab_channel=LadyGagaVEVO" style="color:#082c6c;"><b>Lady Gaga-Paparazzi</b></a>. The song was accompined by static, but the it slightly improved after improving the connection. When connecting peripherals, we should always use proper connectors. </p>
-									</div>
-									<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Close</b></button>
-									</div>
-								</div>
 								</div>
 							</div>
 
@@ -153,7 +153,7 @@
 
 						<div class="card-footer">
 							<!-- add disabled keyword to end of first tag to get the look without function  -->
-							<a class="mt-1 btn btn-sm btn-success" href="https://github.com/anijjar/ECE299"role="button" style="color:#000000" target="_blank"><b>Files</b></a>
+							<a class="mt-1 btn btn-sm btn-success" href="https://github.com/anijjar/ECE299"role="button" target="_blank"><b>Files</b></a>
 							<a class="mt-1 btn btn-sm btn-info" href="https://www.uvic.ca/calendar/undergrad/#/courses/rkxvdluaQV?bc=true&bcCurrent=Introduction%20to%20Electrical%20and%20Computer%20Engineering%20Design&bcItemType=Courses" style="color:#082c66"  role="button" target="_blank"><b>ECE 299</b></a>
 							<a class="mt-1 btn btn-secondary btn-sm"><b>CAD Tool: Ki-Cad</b></a>
 						</div>

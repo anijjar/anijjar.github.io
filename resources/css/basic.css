@@ -7,7 +7,9 @@ body {
 .btn {
     color: #f4d47c;
 }
-
+.btn-success {
+	color:#000000;
+}
 .fa {
     color: #f4d47c;
 }
@@ -19,12 +21,15 @@ body {
     width: 100%;
     z-index: 1000;
   }
-
 .navbar .dropdown-menu {
     background-color: #f4d47c;
     text-align: center;
+	position: absoulute 
 }
+.dropdown {
+	position: relative;   // for keeping it alligned on same line
 
+}
 /* change the color of the hamburger drop down icon */ 
 .navbar-dark.navbar-toggler { 
     border-color: #f4d47c; 
@@ -36,73 +41,71 @@ body {
 } 
 
 .jumbotron{ 
-	background-color: #444444; 
     background-size: 100% 100%; 
     color: #f4d47c;
 	background-repeat: no-repeat; 
 }
+.jumbotron h1 span { 
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.jumbotron p span {
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-header .close{
+    color: #f4d47c; 
+    opacity: 1;
+}
+.modal-body {
+    background-color:#082c6c;
+}
+.modal-footer {
+    border-top: 0 none;
+}
+
 /* select the tag with id hardware and the class jumbotron */
 #hardware.jumbotron{ 
 	background-image: url('../img/jumbotron-bg.jpg'); 
-    background-size: 100% 100%; 
-    color: #f4d47c;
-	background-repeat: no-repeat; 
 }
-
 #hardware.jumbotron h1 span { 
-    background-color: #082c6c; 
-    border-radius: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+    background-color: #082c6c;
 }
-
 #hardware.jumbotron p span { 
-    background-color: #082c6c; 
-    border-radius: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+    background-color: #082c6c;
 }
-
 #hardware img {
     width: auto;
     height: 275px;
     object-fit: fill;
 }
-#hardware .modal-header{
-    background-color: #082c6c;
-}
-#hardware .modal-body {
-    background-color:#f4d47c;
-    color: #082c6c;
-    
- }
- #hardware .modal-footer{
-    background-color: #082c6c;
-}
+
+
 #firmware.jumbotron{ 
-	background-image: url('../img/assembly.jpg'); 
-    background-size: 100% 100%; 
-    color: #f4d47c;
-	background-repeat: no-repeat; 
+	background-image: url('../img/assembly.jpg');
 }
+
 
 #software.jumbotron{ 
 	background-image: url('../img/bitcoin-code.jpg'); 
-    background-size: 100% 100%; 
-    color: #f4d47c;
-	background-repeat: no-repeat; 
 }
-
 #software.jumbotron h1 span { 
     background-color: #193f15; 
-    border-radius: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
 }
-
 #software.jumbotron p span { 
     background-color: #193f15; 
-    border-radius: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
 }
+
+
+
+
+
+
+

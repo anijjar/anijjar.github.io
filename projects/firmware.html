@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/29a2e33ae2.css">	
 		<!-- GOOGLE FONTS -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<title>Projects</title>
+		<title>Firmware Projects</title>
 		<link rel="stylesheet" href="../resources/css/basic.css"/>
 	</head>
 
@@ -69,18 +69,38 @@
 					<div class="card bg-dark">
 						<img class="card-img-top" src="../resources/img/trafficGenerator.gif" alt="Card image cap">
 						<div class="card-body pb-0">
-							<h5 class="card-title">Street Traffic Simulator</h5>
+							<h5 class="card-title text-center">Street Traffic Simulator</h5>
 							<p>Simualtes street traffic by using LEDs and shift-registers. The flow of traffic is adjusted by using a potentiometer, at which case the traffic light spends more time green than red.</p>
-							<p><b>Core Concepts:</b> C programming | Real-time Operating Systems
+							<p><b>Core Concepts:</b> C | RTOS | Deadline-Driven Schedulars 
 							</p>
-							<p><b>Project Progress:</b> 100% - Completed (Dec 2019)</p>
-							<p><b>Final Product:</b> 
-								The electronics were placed on two breadboards and were controlled using a STM board; The system worked brillantly. 4 RTOS tasks were used: one to read the potentiometer, one to generate traffic, one to adjust traffic lights, and one to output the LED states. 
-							</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-block btn-secondary"  data-toggle="modal" data-target="#FinalProduct3">
+								<b>Learn More</b>
+							</button>
+							<!-- Modal -->
+							<div class="modal " id="FinalProduct3" tabindex="-1" role="dialog" aria-labelledby="FinalProduct3Label" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header bg-dark">
+											<h5 class="modal-title " id="FinalProduct3Label">Final Product</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<p>The electronics were placed on two breadboards and were controlled using a STM board; The system worked brillantly. 4 RTOS tasks were used: one to read the potentiometer, one to generate traffic, one to adjust traffic lights, and one to output the LED states. </p>
+										</div>
+										<div class="modal-footer bg-dark">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Close</b></button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+						
 						<div class="card-footer">
 							<!-- add disabled keyword to end of first tag to get the look without function  -->
-							<a class="btn btn-sm btn-success" href="https://github.com/anijjar/ECE455"role="button" target="_blank">Files</a>
+							<a class=" mt-1 btn btn-block btn-success" href="https://github.com/anijjar/ECE455"role="button" target="_blank"><b>Files</b></a>
 						</div>
 					</div>
 				</div>
