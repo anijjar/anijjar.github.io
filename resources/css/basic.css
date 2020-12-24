@@ -4,12 +4,15 @@ body {
     color: #f4d47c; 
 }
 
+b {}
 .btn {
     color: #f4d47c;
 }
-.btn-success {
-	color:#000000;
+.btn-built_on {
+    background-color: #bebebe; 
+    color:#082c66;
 }
+
 .fa {
     color: #f4d47c;
 }
@@ -20,15 +23,19 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
+}
+.nav-item.dropdown .nav-link.dropdown-toggle{
+    color:#f4d47c;
+}
+.navbar-nav.nav-fill .nav-item .nav-link{
+    color:#f4d47c;
+}
 .navbar .dropdown-menu {
     background-color: #f4d47c;
-    text-align: center;
-	position: absoulute 
+    text-align: center;   
 }
 .dropdown {
-	position: relative;   // for keeping it alligned on same line
-
+	position: relative;   /* for keeping it alligned on same line*/
 }
 /* change the color of the hamburger drop down icon */ 
 .navbar-dark.navbar-toggler { 
@@ -38,23 +45,39 @@ body {
     /* RGB color code of #f4d47c is (244,212,124)*/
     background-image: url( 
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(244, 212, 124, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
-} 
+}
+.navbar-dark .navbar-brand {
+    color:#f4d47c;
+}
+
+img.self-portrait {
+    border: 5px solid #f4d47c;
+    border-radius: 4px;
+    width: 65%;
+    height: auto;
+}
 
 .jumbotron{ 
     background-size: 100% 100%; 
+    background-color:#000000;
     color: #f4d47c;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
+    border-bottom: solid;
+    border-top: solid;
 }
 .jumbotron h1 span { 
     border-radius: 10px;
     padding-right: 10px;
     padding-left: 10px;
+    border: solid;
 }
-.jumbotron p span {
-    border-radius: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+
+.card .card-img-top{
+    width: 100%;
+    height: 30vw;
+    object-fit: fill;
 }
+
 
 .modal-header {
     border-bottom: 0 none;
@@ -71,17 +94,41 @@ body {
     border-top: 0 none;
 }
 
+#mainPage.jumbotron-fluid{ 
+    background-image: url('../img/title-page.jpg'); 
+    background-color: #878683;
+}
+#mainPage.jumbotron-fluid h1 span { 
+    font-size: 10vw;
+    border: none;
+}
+.border_EducationPosition {
+    border:3px; 
+    border-style:solid; 
+    border-radius: 10px;
+    border-color:#f4d47c;
+    display:inline;
+    font-size: 1.8vw;
+}
+
+@media (max-width:992px){
+    #mainPage .col-md-6.col-lg-6.mr-0{
+        border-right: none;
+    }
+    #mainPage .col-md-6.col-lg-6.ml-0{
+        border-left: none;
+    }
+}
+
+
 /* select the tag with id hardware and the class jumbotron */
 #hardware.jumbotron{ 
-	background-image: url('../img/jumbotron-bg.jpg'); 
+    background-image: url('../img/jumbotron-bg.jpg');
 }
 #hardware.jumbotron h1 span { 
     background-color: #082c6c;
 }
-#hardware.jumbotron p span { 
-    background-color: #082c6c;
-}
-#hardware img {
+img {
     width: auto;
     height: 275px;
     object-fit: fill;
@@ -91,6 +138,9 @@ body {
 #firmware.jumbotron{ 
 	background-image: url('../img/assembly.jpg');
 }
+#firmware.jumbotron h1 span { 
+    background-color: #000000;
+}
 
 
 #software.jumbotron{ 
@@ -99,13 +149,11 @@ body {
 #software.jumbotron h1 span { 
     background-color: #193f15; 
 }
-#software.jumbotron p span { 
-    background-color: #193f15; 
+
+
+footer {
+    
+    border-top: solid;
 }
-
-
-
-
-
 
 

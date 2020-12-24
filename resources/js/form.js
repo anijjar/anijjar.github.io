@@ -1,6 +1,6 @@
 
 // Fetching HTML Elements in Variables by ID.
-var x = document.getElementById("form_sample");
+var x = document.getElementById("contact-form");
 var createform = document.createElement('form'); // Create New Element Form
 createform.setAttribute("action", ""); // Setting Action Attribute on Form
 createform.setAttribute("method", "post"); // Setting Method Attribute on Form

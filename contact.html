@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<title>Projects</title>
 		<link rel="stylesheet" href="../resources/css/basic.css"/>
+		<script src="./resources/js/form.js"></script>
 	</head>
 
 	<body>
@@ -26,27 +27,36 @@
 			<!-- START NAVBAR -->
 			<div id="navigation">
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark	">
-				<a class="navbar-brand" style="color:#f4d47c;" href="/index.html">Amanpreet Nijjar</a>
+				<a class="navbar-brand" href="/index.html">Amanpreet Nijjar</a>
 				<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse " id="main-navigation">
 					<ul class="navbar-nav nav-fill w-100 ">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" style="color:#f4d47c;" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Projects
+						<!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Technical Projects
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								<a class="dropdown-item" href="/projects/hardware.html">Hardware</a>
 								<a class="dropdown-item" href="/projects/firmware.html">Firmware</a>
 								<a class="dropdown-item" href="/projects/software.html">Software</a>
 							</div>
-						</li>
-						<li class="nav-item"><a class="nav-link " style="color:#f4d47c;"href="/volunteer-work.html">Volunteer Work</a> </li>
-						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="/work-experience.html">Work Experience</a></li>
-						<!-- Make this a drop down menu to 3 main ones: PCB design, software dev, and robotics  -->
-						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="/resumes.html">Resumes</a></li>
-						<li class="nav-item"><a class="nav-link" style="color:#f4d47c;"href="/contact.html">Contact Me</a></li>
+						</li> -->
+						<li class="nav-item"><a class="nav-link" href="/projects/hardware.html">Hardware Projects</a> </li>
+						<li class="nav-item"><a class="nav-link" href="/projects/firmware.html">Firmware Projects</a> </li>
+						<li class="nav-item"><a class="nav-link" href="/projects/software.html">Software Projects</a> </li>
+						<li class="nav-item"><a class="nav-link" href="/volunteer-work.html">Volunteer Work</a> </li>
+						<li class="nav-item"><a class="nav-link" href="/work-experience.html">Work Experience</a></li>
+						<!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Other Projects
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="/projects/hardware.html">Blender</a>
+							</div>
+						</li> -->
+						<!-- <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Me</a></li> -->
 					</ul>
 				</div>
 				</nav>
@@ -56,60 +66,44 @@
 
         <!-- START CONTENT -->
         <main>
-			<div class="container m-auto pb-0 pt-4">
-				<div class="row">
-					<div class="col-12 col-lg-6">
-						<h2 class="display-4 text-center my-4">Contact Me</h2>
-						<p class="text-center w-responsive mx-auto"> 
-							Do you have any questions for me? Please do not hesitate to contact me. if you send an email, you should expect a response by the end of the day. Feel free to call my cell @ 604-500-5071 if you would like a quicker response. (This form wont work yet, adding the JS soon)
-						</p>
-						<div class="text-center pb-3">
-							<a href="mailto:anijjar@uvic.ca" target=”_blank”><i class="fa fa-envelope-o fa-3x mr-3"></i></a>
-							<a href="https://github.com/anijjar" target=”_blank”><i class="fa fa-github fa-3x mr-3"></i></a>
-							<a href="https://www.linkedin.com/in/anijjar19/" target=”_blank”><i class="fa fa-linkedin-square fa-3x mr-3"></i></a>
-							<a href="https://www.facebook.com/aman.nijjar1998/" target=”_blank”><i class="fa fa-facebook-square fa-3x"></i></a>
+			<div class="container m-auto p-4">
+				<!-- add some more pizzzaz to the page -->
+				<div class="col-12">
+					<h2 class="display-4 text-center my-4 ">Contact Me</h2>
+					<form id="contact-form" name="contact-form" action="mailto:anijjar@uvic.ca" method="POST" >
+						<div class="row">
+							<!--Grid column-->
+							<div class="col-md-6">
+								<div class="md-form">
+									<input type="text" id="name" name="name" class="form-control">
+									<label for="name" >Your name</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="md-form">
+									<input type="text" id="email" name="email" class="form-control">
+									<label for="email">Your email</label>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-12 col-lg-6">
-						<form id="contact-form" name="contact-form" action="mail.php" method="POST">
-							<div class="row">
-								<!--Grid column-->
-								<div class="col-md-6">
-									<div class="md-form mb-0">
-										<input type="text" id="name" name="name" class="form-control">
-										<label for="name" class="">Your name</label>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="md-form mb-0">
-										<input type="text" id="email" name="email" class="form-control">
-										<label for="email" class="">Your email</label>
-									</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="md-form mb-0">
+									<input type="text" id="subject" name="subject" class="form-control">
+									<label for="subject" class="">Subject</label>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="md-form mb-0">
-										<input type="text" id="subject" name="subject" class="form-control">
-										<label for="subject" class="">Subject</label>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="md-form">
-										<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-										<label for="message">Your message</label>
-									</div>
-								</div>
-							</div>
-						</form>
-
-						<div class="text-center">
-							<a class="btn btn-secondary bg-dark border-dark btn-block" onclick="document.getElementById('contact-form').submit();"><b>Send The Message</b></a>
-							<script src="resources/js/form.js"></script>
 						</div>
-					</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="md-form">
+									<textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
+									<label for="message">Your message</label>
+								</div>
+							</div>
+						</div>
+						<input type="submit" class="btn btn-secondary bg-dark border-dark btn-block" value="Send The Message"></a>
+					</form>
 				</div>
 			</div>
         </main>
@@ -117,18 +111,15 @@
 
 		<!-- START FOOTER -->
 		<footer class="page-footer font-small bg-dark mt-4">
-			<div class="container-fluid text-center text-md-left pt-2">
+			<div class="container-fluid text-center text-md-left pt-2 pb-3">
 				<h5 class="text-uppercase text-center">Interested in a chat?</h5>
 				<p class="text-center">Feel free to contact me through any of these channels.</p>
 				<div class="text-center">
-					<a href="mailto:anijjar@uvic.ca" target=”_blank”><i class="fa fa-envelope-o fa-3x mr-3"></i></a>
-					<a href="https://github.com/anijjar" target=”_blank”><i class="fa fa-github fa-3x mr-3"></i></a>
-					<a href="https://www.linkedin.com/in/anijjar19/" target=”_blank”><i class="fa fa-linkedin-square fa-3x mr-3"></i></a>
-					<a href="https://www.facebook.com/aman.nijjar1998/" target=”_blank”><i class="fa fa-facebook-square fa-3x"></i></a>
+					<a href="mailto:anijjar@uvic.ca" target=”_blank”><i class="fa fa-envelope-o fa-3x mx-2"></i></a>
+					<a href="https://github.com/anijjar" target=”_blank”><i class="fa fa-github fa-3x mx-2"></i></a>
+					<a href="https://www.linkedin.com/in/anijjar19/" target=”_blank”><i class="fa fa-linkedin-square fa-3x mx-2"></i></a>
+					<a href="https://www.facebook.com/aman.nijjar1998/" target=”_blank”><i class="fa fa-facebook-square fa-3x mx-2"></i></a>
 				</div>
-			</div>
-			<div class="footer-copyright text-center py-3">© 2020 Copyright:
-				<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
 			</div>
 		</footer>
 		<!-- END FOOTER -->
