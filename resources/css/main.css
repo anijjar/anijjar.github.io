@@ -6,6 +6,23 @@
    font-style: normal;
    color:#D4ECDD;
  }
+
+/*on screens >970px, make the elements stop expanding */
+@media only screen and (min-width: 970px){
+   
+}
+/*on small screens, center align the logo*/
+@media only screen and (min-width: 425px){
+   /* .navbar-brand #icon{
+      position: fixed;
+      top: 11%;
+      left: 50%;
+      margin-top: -35px;
+      margin-left: -35px;
+      display: block;
+      margin: auto; 
+   } */
+}
 body {
    margin-top: 55px;
    background-color: #112031;
@@ -14,20 +31,16 @@ body {
 h1, h2, h3, h4, h5, p, b, hr{
    color: #D4ECDD;
 }
-h3{
-   font-size:3vw;
-}
-b {
-   font-size: 1.05em;
+h3, p{
+   text-align: left;
 }
 hr {
-   border-top: 3px dashed;
+   border-top: 2px solid;
 }
 #icon {
    width: 35px;
    height: 35px;
 }
-
 
 
 .dropdown {
@@ -58,7 +71,7 @@ hr {
 
 img {
    width: auto;
-   height: 275px;
+   /* height: 275px; */
    object-fit: fill;
 }
 
@@ -69,6 +82,7 @@ img {
    background-size: 100% 100%; 
    background-repeat: no-repeat;
    border-bottom: solid;
+   border-color: #345B63;
    border-top: solid;
 }
 .jumbotron h1 span { 
