@@ -1,0 +1,120 @@
+@font-face {
+   font-family: "roboto";
+   src: url("../font/roboto-v27-latin-regular.woff2") format("woff2"),
+     url("../font/roboto-v27-latin-regular.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+   color:#D4ECDD;
+ }
+body {
+   margin-top: 55px;
+   background-color: #112031;
+   font-family: 'roboto';
+}
+h1, h2, h3, h4, h5, p, b, hr{
+   color: #D4ECDD;
+}
+h3{
+   font-size:3vw;
+}
+b {
+   font-size: 1.05em;
+}
+hr {
+   border-top: 3px dashed;
+}
+#icon {
+   width: 35px;
+   height: 35px;
+}
+
+
+
+.dropdown {
+   position: relative;   /* for keeping it alligned on same line*/
+ }
+.navbar {
+   background-color: #152D35;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+}
+.navbar .navbar-brand {
+   color:#D4ECDD;
+}
+.navbar-nav.nav-fill .nav-item .nav-link{
+   color:#D4ECDD;
+}
+/* change the color of the hamburger drop down icon border */ 
+.navbar-toggler { 
+   border-color: #D4ECDD;
+} 
+.navbar-toggler .navbar-toggler-icon {
+   /*change stroke for hamburger line color*/
+   background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(212,236,221)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+}
+
+img {
+   width: auto;
+   height: 275px;
+   object-fit: fill;
+}
+
+
+
+
+.jumbotron{ 
+   background-size: 100% 100%; 
+   background-repeat: no-repeat;
+   border-bottom: solid;
+   border-top: solid;
+}
+.jumbotron h1 span { 
+   border-radius: 10px;
+   padding-right: 10px;
+   padding-left: 10px;
+   border: solid;
+   background-color: #112031;
+   font-size: 10vw;
+}
+
+
+
+
+.modal-header {
+   border-bottom: 0 none;
+}
+
+.modal-header .close{
+   color: #f4d47c; 
+   opacity: 1;
+}
+.modal-body {
+   background-color:#082c6c;
+}
+.modal-footer {
+   border-top: 0 none;
+}
+.card .card-img-top{
+   width: 100%;
+   height: 30vw;
+   object-fit: fill;
+}
+.btn {
+   color: #f4d47c;
+}
+.btn-built_on {
+   background-color: #bebebe; 
+   color:#082c66;
+}
+
+
+footer {
+   background-color: #152D35;
+   border-top: solid;
+}
+.fa {
+   color: #D4ECDD;
+}

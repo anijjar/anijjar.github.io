@@ -1,0 +1,33 @@
+
+img.self-portrait {
+    border: 5px solid #D4ECDD;
+    border-radius: 4px;
+    width: 65%;
+    height: auto;
+}
+
+.jumbotron{ 
+    background-image: url('../img/title-page.jpg');
+}
+
+.border_EducationPosition {
+    border:3px; 
+    background-color: #112031;
+    border-style:solid; 
+    border-radius: 10px;
+    display:inline;
+    font-size: 1.8vw;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
