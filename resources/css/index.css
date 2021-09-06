@@ -18,13 +18,14 @@ img.self-portrait {
     border-radius: 10px;
     display:inline;
     text-align:center;
+    font-size: 2.5vw;
 }
 
 /*on small screens, fix the educationPositon*/
-@media only screen and (max-width: 375px){
-   div .border_EducationPosition, p {
-      font-size: 3vw;
-  }
+@media only screen and (min-width: 375px){
+   .border_EducationPosition{
+      padding-top: 50px;
+   }
    
 }
 /*on large screens, add padding to educationPosition*/
