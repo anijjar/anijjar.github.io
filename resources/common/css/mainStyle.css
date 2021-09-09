@@ -23,8 +23,8 @@ hr {
    border-top: 2px solid;
 }
 #icon {
-   width: 35px;
-   height: 35px;
+   width: 55px;
+   height: 55px;
 }
 
 
@@ -129,6 +129,8 @@ footer {
 /*Center align the icon when the window is 425px wide or less*/
 @media only screen and (max-width: 425px){
    #icon{
+      width: 55px;
+      height: 55px;
       position: absolute;
       left: 50%;
       transform: translate(-50%,-50%);
