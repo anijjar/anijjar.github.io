@@ -29,7 +29,8 @@ hr {
 
 
 .dropdown {
-   position: relative;   /* for keeping it alligned on same line*/
+/* for keeping it alligned on same line*/
+   position: relative;   
  }
 .navbar {
    background-color: #152D35;
@@ -54,11 +55,6 @@ hr {
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(212,236,221)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 }
 
-img {
-   width: auto;
-   /* height: 275px; */
-   object-fit: fill;
-}
 
 .jumbotron{ 
    background-size: 100% 100%; 
@@ -153,5 +149,16 @@ footer {
       height: 30vw;
       object-fit: fill;
    }
+
+}
+
+/* Laptop L and >  */
+@media only screen and (min-width: 1440px){
+/* add margins to the left and right of page
+   .device_wraper{
+      margin-left: 15vw;
+      margin-right: 15vw;
+
+   } */
    
 }
