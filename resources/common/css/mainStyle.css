@@ -126,16 +126,13 @@ footer {
 @media only screen and (min-width: 970px){
    
 }
-/*on small screens, center align the logo*/
-@media only screen and (min-width: 425px){
-   /* .navbar-brand #icon{
-      position: fixed;
-      top: 11%;
+/*Center align the icon when the window is 425px wide or less*/
+@media only screen and (max-width: 425px){
+   #icon{
+      position: absolute;
       left: 50%;
-      margin-top: -35px;
-      margin-left: -35px;
-      display: block;
-      margin: auto; 
-   } */
+      top: 50%;
+      transform: translate(-50%,-50%);
+   }
    
 }

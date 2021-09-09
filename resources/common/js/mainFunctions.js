@@ -4,3 +4,4 @@ $(document).ready(() => {
     $('.navbar_wraper').load('/resources/common/navbar.html');    
     $('.footer_wraper').load('/resources/common/footer.html');
 });
+
