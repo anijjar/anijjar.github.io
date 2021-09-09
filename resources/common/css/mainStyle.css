@@ -126,14 +126,16 @@ footer {
 @media only screen and (min-width: 970px){
    
 }
-/*Center align the icon when the window is 425px wide or less*/
+/*Center align the icon and increase jumbotron text when the window is 425px wide or less*/
 @media only screen and (max-width: 425px){
    #icon{
-      width: 55px;
-      height: 55px;
+      width: 50px;
+      height: 50px;
       position: absolute;
       left: 50%;
       transform: translate(-50%,-50%);
    }
-   
+   .jumbotron h1 span {
+      font-size: 16vw;
+   }
 }
