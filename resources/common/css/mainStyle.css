@@ -60,9 +60,6 @@ img {
    object-fit: fill;
 }
 
-
-
-
 .jumbotron{ 
    background-size: 100% 100%; 
    background-repeat: no-repeat;
@@ -96,16 +93,13 @@ img {
 .modal-footer {
    border-top: 0 none;
 }
-.card .card-img-top{
-   width: 100%;
-   height: 30vw;
-   object-fit: fill;
-}
+
 
 .card {
    background-color: #345B63;
    margin-bottom: 15px;
 }
+
 .btn {
    background-color: #112031;
    border-color: #345B63;
@@ -122,12 +116,18 @@ footer {
    color: #D4ECDD;
 }
 
-/*on screens >970px, make the elements stop expanding */
-@media only screen and (min-width: 970px){
-   
+/* for mobile m  and less */
+@media only screen and (max-width: 375px){
+   /*change height of cards*/
+   .card-img-top{
+      width: 100%;
+      height: 100vw;
+      object-fit: fill;
+   }
 }
-/*Center align the icon and increase jumbotron text when the window is 425px wide or less*/
+/*for mobile l and less*/
 @media only screen and (max-width: 425px){
+   /*Center align the icon */
    #icon{
       width: 50px;
       height: 50px;
@@ -135,7 +135,23 @@ footer {
       left: 50%;
       transform: translate(-50%,-50%);
    }
+   /* increase jumbotron text */
    .jumbotron h1 span {
       font-size: 16vw;
    }
+   /* Modify the card image sizes */
+   .card-img-top{
+      width: 100%;
+      height: 50vw;
+      object-fit: fill;
+   }
+}
+/* for mobile l and larger */
+@media only screen and (min-width: 425px){
+   .card-img-top{
+      width: 100%;
+      height: 30vw;
+      object-fit: fill;
+   }
+   
 }
