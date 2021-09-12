@@ -13,7 +13,7 @@ body {
    background-color: #112031;
    font-family: 'roboto';
 }
-h1, h2, h3, h4, h5, p, b, hr{
+h1, h2, h3, h4, h5, p, b, hr, li{
    color: #D4ECDD;
 }
 h3, p{
@@ -143,17 +143,29 @@ footer {
    }
 }
 /* for mobile l and larger */
-@media only screen and (min-width: 425px){
+@media only screen and (min-width: 426px){
    .card-img-top{
       width: 100%;
       height: 30vw;
       object-fit: fill;
    }
-
+   /* increase jumbotron text */
+   .jumbotron h1 span {
+      font-size: 10vw;
+   }
 }
 
 /* Laptop L and >  */
 @media only screen and (min-width: 1440px){
+   .card-img-top{
+      width: 100%;
+      height: 15vw;
+      object-fit: fill;
+   }
+   /* increase jumbotron text */
+   .jumbotron h1 span {
+      font-size: 6vw;
+   }
 /* add margins to the left and right of page
    .device_wraper{
       margin-left: 15vw;
