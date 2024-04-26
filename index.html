@@ -17,9 +17,11 @@
     <link rel="canonical" href="https://anijjar.github.io/">
     <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+    
     <style>
       /* Webkit browsers like Chrome, Safari, Opera */
       ::-webkit-scrollbar {
+      height: 10px; 
       width: 10px; /* Adjust scrollbar width */
       }
 
@@ -42,23 +44,23 @@
   <body class="bg-slate-950 text-slate-50">
     <main class="relative flex flex-col sm:flex-row overflow-y-auto h-dvh" aria-label="Main content">
       <!-- Header -->
-      <div class="sm:fixed flex flex-col space-y-3 pt-6 sm:w-1/2 lg:w-1/3 sm:h-full font-semibold items-center justify-center text-pretty">
+      <div class="sm:fixed flex flex-col space-y-3 pt-6 px-0 sm:pl-6 sm:pr-6 sm:w-1/2 lg:w-1/3 sm:h-full font-semibold items-center justify-center text-pretty">
         <img src="assets/portrait.jpg" alt="Portrait" class="rounded-full w-44 h-44">
         <h1 class="text-5xl xl:text-6xl font-bold whitespace-nowrap">Aman Nijjar</h1>
-        <h3 class="text-lg lg:text-xl">Computer Engineer</h3>
-        <p class="text-base font-normal">I specialize in embedded systems design</p>
+        <h3 class="text-lg lg:text-xl text-center">University of Victoria's Computer Engineer Graduate</h3>
+        <p class="text-base font-normal text-center">I specialize in embedded systems, not web design <i class="fa-regular fa-face-laugh-squint"></i></p>
         <nav id="socialLinks" class="flex flex-row justify-between">
           <div class="flex space-x-4">
-            <a href="www.github.com/anijjar"><i class="fa-brands fa-github text-4xl hover:text-slate-600 transition duration-300 ease-in-out"></i></a>
-            <a href="www.linkedin.com/in/amannijjar/"><i class="fa-brands fa-linkedin text-4xl hover:text-slate-600 transition duration-300 ease-in-out"></i></a>
-            <a href="www.instagram.com/anijjar19/"><i class="fa-brands fa-instagram text-4xl hover:text-slate-600 transition duration-300 ease-in-out"></i></a>
+            <a href="https://www.github.com/anijjar" target="_blank"><i class="fa-brands fa-github text-4xl hover:text-slate-600 transition duration-300 ease-in-out"></i></a>
+            <a href="https://www.linkedin.com/in/amannijjar/" target="_blank"><i class="fa-brands fa-linkedin text-4xl hover:text-slate-600 transition duration-300 ease-in-out"></i></a>
+            <a href="https://www.instagram.com/anijjar19/" target="_blank"><i class="fa-brands fa-instagram text-4xl hover:text-slate-600 transition duration-300 ease-in-out"></i></a>
           </div>
         </nav>
       </div>
       <!-- Content -->
-      <div class="sm:absolute flex flex-col space-y-4 sm:inset-y-0 sm:right-0 sm:w-1/2 lg:w-2/3 mb-12 sm:m-6 p-6 sm:py-0 sm:pl-0">
+      <div class="sm:absolute flex flex-col space-y-4 sm:inset-y-0 sm:right-0 sm:w-1/2 lg:w-2/3 p-6 sm:py-4 sm:pl-0">
         <details id="About" class="text-pretty mt-2">
-          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500 rounded-md p-2 z-10">About Me</summary>
+          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500 rounded-xl p-2 z-10">About Me</summary>
           <p class="mt-2">In 2018, I was accepted into the Computer Engineering program at the University of Victoria. Shortly after, I joined the Autonomous Underwater Vehicles Interdisciplinary Club (AUVIC). This experience was my first introduction to PCB design, firmware development, and programming in C++ and Python. I later achieved a leadership role, leading the club for several months, successfully managing projects such as a ROS control system, the mechanical grabber arm, and computer vision development. Currently, I offer consultation and advice to the club members.</p><br>
            
           <p>Upon completing my degree, I achieved my goal of deepening my understanding of robotics and embedded systems. I am now actively seeking to apply these skills to a career in the manufacturing or medical sectors, with a particular interest in hardware development. My strong technical skills, coupled with my project management expertise, position me as a valuable asset in any team.</p><br>
@@ -66,8 +68,8 @@
           <p>Leading engineering students has highlighted the importance of finding the best solution, rather than striving for perfection. This lesson was learned the hard way during my ECE 200 class when I attempted to overengineer a 3D-printed enclosure. It's a reminder that sometimes, simplicity is the key.</p>
         </details>         
         
-        <details open id="Experience" class="text-pretty mt-2">
-          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500 rounded-md p-2 -mt-2 z-10">Professional Experience</summary>
+        <details id="Experience" class="text-pretty mt-2">
+          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500  rounded-xl p-2 -mt-2 z-10">Professional Experience</summary>
           <ol class="relative border-s border-slate-600 my-6 mx-2">
             <li class="mb-10 ml-4 max-w-2xl">
               <div class="absolute w-3 h-3 bg-slate-400 rounded-full -start-1.5"></div>
@@ -88,6 +90,7 @@
                 <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Black-box Testing</li>
                 <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Python Automation</li>
                 <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">HVAC</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">PTC Programming</li>
                 <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Altium</li>
                 <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Soldering & Hand Tools</li>
                 <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Quality Assurance</li>
@@ -122,26 +125,205 @@
            
         </details>
         
-        <details id="Projects" class="text-pretty mt-2">
-          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500 rounded-md p-2 -mt-2 z-10">Projects</summary>
-          <p>In 2018, I got enrolled into the Computer Engineering program at the University of Victoria. My goal was to study and learn about robotics and embedded systems.
-            
-            The field of Electrical Engineering is insurmountably large, but the industries I am interested with is electronics and robotics. Specifically, building and testing custom hardware solutions to problems. Recently, I developed a motor controller to supply constant DC current at adjustable voltages to several Blue Robotics ESCs, alongside onboard digital sensors such as the TMP75AIDR temperature sensor and DPS368XTSA1 pressure sensor, to solve the issue of power control and feedback for a robot.
-          </p><br>
-          <p>During Robosub 2023, an international robotics competition, our team's power regulation board died, which would have disqualified us. However, due to my quick thinking, I was able to retrofit our paritally broken, older hardware into the new system by rewriting the firmware and swapping out components. The on-board power regulator was broken, along with the hall sensor detection circuit, both of which I found solutions for.
-          </p><br>  
-          <p>My most recent employment was at Delta Controls. I performed Black Box Testing For Andrew Swanton and Jack Van Eeden to validate component alternatives to mitigate supply chain disruptions. Other tasks included: automation with Python, external EMC lab testing, Highly Accelerated Lifetime-Testing, and developing test plans for components.
-          </p><br>  
-          <p>In my free time, I usually enjoy playing sports and writing code, but recently, I have been getting into making small crafts such as playing card cases.</p>
-        
+        <details open id="Projects" class="text-pretty mt-2">
+          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500  rounded-xl p-2 -mt-2 z-10">Projects</summary>
+          <ol class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 grid-flow-row auto-rows-max ml-2 py-3 text-pretty text-xs">
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Traffic Light Simulator</h3>
+              <h4 class="text-pretty">Simulates two-way traffic using a round-robin scheduler on a STM microcontroller</h4>
+              <h5 class="font-bold tracking-wider text-slate-400">Version 2: Hardware Design (Altium + LTSpice)</h5>
+              <ul class="list-disc pl-5">
+                <li>Located SMD alternatives to breadboard PDIP components.</li>
+                <li>Simulated digital circuit to calculate max driving current.</li>
+                <li>Captured the schematic and layout on Altium.</li>
+                <li>Validated board dimensions with the datasheet and also a Solidworks model.</li>
+              </ul>
+              <h5 class="font-bold tracking-wider text-slate-400">Version 1: Firmware Development (FreeRTOS)</h5>
+              <ul class="list-disc pl-5">
+                <li>Built a flow chart describing logic.</li>
+                <li>Broke down what freeRTOS components will be best (semiphores/Queues/etc).</li>
+                <li>Wrote and tested the C code with CUnit.</li>
+                <li>Troubleshooted by reading register values and displaying output on Shift Registers + LEDs.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Altium</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">RTOS</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">C Programming</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Breadboarding</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">SPICE</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Network Schedulers</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Electronic Speed Controller</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">4-layer PCB to drive one quad-copter 3-phase BLDC with Field-Oriented Control</h5>
+              <h4 class="text-pretty">Field-Oriented Control is used on Variable-Frequency Drives to control 3-phase BLDCs through two orthogonal components - torque and magnetic flux - to minimize torque ripple</h4>
+              <ul class="list-disc pl-5">
+                <li>Queried academic databases on papers experimenting FOC on small BLDCs to increase confidence.</li>
+                <li>Simulated the FOC logic using MATLAB Simulink's toolkit.</li>
+                <li>Designed, selected components, & simulated circuits (3-phase inverter, dynamic brakes, op-amp feedback, etc).</li>
+                <li>Implimented SVPWM to get a 20% increase of max voltage.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Control Systems</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Altium</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">C programming</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Simulink</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Hydrophone Pre-amp </h3>
+              <h5 class="font-bold tracking-wider text-slate-400">2-layer RF PCB to sample Teledyne hydrophones</h5>
+              <h4 class="text-pretty">Reduced inductance & improved signal integrity by reducing board thickness to 0.6mm and using a solid ground plane.</h4>
+              <ul class="list-disc pl-5">
+                <li>Simulated & designed an active 2nd order band-pass filter to pass signals between 20kHz-35Khz</li>
+                <li>Used a common SOP-6 footprint to allow for ad-hoc adjustment of parts, mitigating board-spins.</li>
+                <li>Validated band-pass filter through LTspice and an online calculator.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Altium</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Signal Processing</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">SPICE</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Kogge Stone Adder</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Computer Architecture (VHDL + Vivado)</h5>
+              <h4 class="text-pretty">Up to 30% more efficiency than the Ripple Carry Adder (Due to Lookahead logic) </h4>
+              <ul class="list-disc pl-5">
+                <li>Broke down the components of a Kogge Stone Adder.</li>
+                <li>Analyzed and built the Carry-Lookahead Generator.</li>
+                <li>Built remaining components and connected signals.</li>
+                <li>Black-Box tested using dummy values.</li>
+                <li>Sythensized & Implemented on a Basis 3 board.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">VHDL</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Vivado</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">RTL Analysis</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Synthesis</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Job Posting Aggregator</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Web Scrapping (Python + Selenium)</h5>
+              <h4 class="text-pretty">Personal Tool to save time querying Learning In Motion</h4>
+              <ul class="list-disc pl-5">
+                <li>Quered HTML and parsed elements with BeutifullSoup.</li>
+                <li>Downloaded PDFs and saved to a local folder.</li>
+                <li>Swapped CLI to Tkinter GUI for login credentials.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Python</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Selenium</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">TKinter GUI</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Automation</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">16-bit 5-Stage Pipeline CPU</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Computer Architecture (VHDL + Vivado)</h5>
+              <h4 class="text-pretty">16-bit CPU following the Thumb ISA</h4>
+              <ul class="list-disc pl-5">
+                <li>Built the register component using structural design paradigm.</li>
+                <li>Described what the 5-stages require (Fetch, Decode, Execute, Memory Access, Writeback).</li>
+                <li>Built the required components using the hybrid design paradigm.</li>
+                <li>Black-Box tested each stage using dummy values.</li>
+                <li>Tested for data, control, and structural hazards (used data-forwarding to prevent data hazards).</li>
+                <li>Validated with the fibbanachi sequence.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">VHDL</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Vivado</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">RTL Analysis</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Synthesis</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Gate Detection Algorithm</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Computer Vision (Python)</h5>
+              <h4 class="text-pretty">Identifies gates underwater using a USB camera at 70% accuracy</h4>
+              <ul class="list-disc pl-5">
+                <li>Improved an AUVs intelligence by feeding video into a Canny-edge detection algorithm.</li>
+                <li>Video was preprocessed in a Python script by converting to greyscale and applying a gaussian blur to remove details.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">OpenCV</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Python</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Algorithms</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Baremetal Cortex-M0 Library</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Firmware Development</h5>
+              <h4 class="text-pretty">C Library written to apply convention over configuration, improving my productivity.</h4>
+              <ul class="list-disc pl-5">
+                <li>OpenOCD and GDB was used to debug.</li>
+                <li>GCC was used to compile the C code. </li>
+                <li>CUnit was used to unit test the dynamic libraries (linked list).</li>
+                <li>Custom Linker scripts were written to decrease stack and increase heap.</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Unit Testing</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Dynamic Programming</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">C Programming</li>
+
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Motor Controller</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Mixed-signal, high-current 4-layer PCB to control 8 ESCs using PID</h5>
+              <h4 class="text-pretty">Decreased fabrication cost by 30% & lowered the resistance of high-current rails by via stitching & removing the solder mask, allowing users to flood solder over the trace, increasing conductance.</h4>
+              <ul class="list-disc pl-5">
+                <li>CAN/I2C/PWM/UART/SPI communication</li>
+                <li>12V, 16V, 20V hot-swappable regulation</li>
+                <li>Arm Cortex M4 Microcontroller with built-in FPU allowing for floating-point arithmetic, rather than fixed-point</li>
+                <li>Off-the-Shelf current monitor used for feedback</li>
+                <li>MOSFET power switch for each ESC</li>
+                <li>Internal Pressure, Temperature, Humidity, and External Pressure sensor footprints and connectors</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Altium</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">SPICE</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Analog/Digital Circuit Design</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Power Electronics</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">FoodieFleet - eComm Marketplace</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Ruby on Rails</h5>
+              <h4 class="text-pretty">TBA</h4>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Breadboard PSU</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Power Electronics</h5>
+              <h4 class="text-pretty">Mounts on breadboard to provide 5V & 3v3 DC from an arduino jack</h4>
+              <ul class="list-disc pl-5">
+                <li>MOSFET toggle switch</li>
+                <li>Hot-swappable voltage switching</li>
+              </ul>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">KiCAD</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">SPICE</li>
+              </ul>
+            </li>
+            <li class="flex flex-col space-y-1">
+              <h3 class="font-bold text-lg text-left tracking-wide">Remote Viewing CCTV</h3>
+              <h5 class="font-bold tracking-wider text-slate-400">Networking</h5>
+              <h4 class="text-pretty">Implemented a NGINX reverse-proxy to allow remote connections to a Ubuntu server running a ShinobiCCTV setup</h4>
+              <ul class="flex flex-wrap items-center font-semibold text-xs sm:text-sm">
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Networking</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">NGINX</li>
+                <li class="m-1 px-2 py-1 bg-slate-50 text-slate-900 rounded-full">Linux OS</li>
+              </ul>
+            </li>
+           </ol>
+           
         </details>
-        
+
         <details id="Education" class="text-pretty mt-2">
-          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500 rounded-md p-2 -mt-2 z-10">Education</summary>
-          <p>In 2018, I got enrolled into the Computer Engineering program at the University of Victoria. My goal was to study and learn about robotics and embedded systems.
-            
-            The field of Electrical Engineering is insurmountably large, but the industries I am interested with is electronics and robotics. Specifically, building and testing custom hardware solutions to problems. Recently, I developed a motor controller to supply constant DC current at adjustable voltages to several Blue Robotics ESCs, alongside onboard digital sensors such as the TMP75AIDR temperature sensor and DPS368XTSA1 pressure sensor, to solve the issue of power control and feedback for a robot.
-          </p>
+          <summary class="sticky top-0 text-xl sm:text-2xl lg:text-4xl bg-slate-500  rounded-xl p-2 -mt-2 z-10">Education & Coursework</summary>
+          <p>TBA</p>
         </details>
       </div>     
     </main>
